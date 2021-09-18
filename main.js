@@ -1,7 +1,7 @@
 lipsX = 0;
 lipsY = 0;
 function preload() {
-    lipstick_lips = loadImage('Lipstick.png');
+    lipstick_lips = loadImage('https://i.postimg.cc/PxFvYgkv/l1.png');
 }
 function setup() {
     canvas = createCanvas(300, 300);
@@ -32,7 +32,7 @@ function gotPoses(results)
         console.log(results);
         lipsX = results[0].pose.lips.X;
         lipsY = results[0].pose.lips.Y;
-        console.log("lips X = " + results[0].pose.lips.X);
-        console.log("lips Y = " + results[0].pose.lips.Y);
+        console.log("lips X = " + results[0].pose.lips.X-25);
+        console.log("lips Y = " + results[0].pose.lips.Y+15);
     }
 }

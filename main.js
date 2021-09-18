@@ -30,9 +30,9 @@ function gotPoses(results)
     if(results.length > 0)
     {
         console.log(results);
-        lipsX = results[0].pose.lips.X;
-        lipsY = results[0].pose.lips.Y;
-        console.log("lips X = " + results[0].pose.lips.X-25);
-        console.log("lips Y = " + results[0].pose.lips.Y+15);
+        lipsX = results[0].pose.lips.X-25;
+        lipsY = results[0].pose.lips.Y+15;
+        console.log("lips X = " + results[0].pose.lips.X);
+        console.log("lips Y = " + results[0].pose.lips.Y);
     }
 }
